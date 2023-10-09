@@ -1,23 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Header from './components/Header';
+import Education from './components/Education';
+import Contact from './components/Contact';
+import SocialMedia from './components/SocialMedia';
+import Hobbies from './components/Hobbies';
+import Cryptography from './components/Cryptography';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Container>
+        <Row>
+          <Col><Header /></Col>
+        </Row>
+        <Row>
+          <Col><Education /></Col>
+          <Col><Contact /></Col>
+          <Col><SocialMedia /></Col>
+        </Row>
+        <Row>
+          <Col><Hobbies /></Col>
+          <Col><Cryptography /></Col>
+        </Row>
+        <Row>
+          <Col><a href="resume.pdf" download>Descargar CV</a></Col>
+          <Col><a href="">Mi Llave Pública</a></Col>
+        </Row>
+      </Container>
     </div>
   );
 }
