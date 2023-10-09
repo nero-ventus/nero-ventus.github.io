@@ -9,6 +9,7 @@ import Cryptography from './components/Cryptography';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 
 function App() {
   return (
@@ -27,8 +28,8 @@ function App() {
           <Col><Cryptography /></Col>
         </Row>
         <Row>
-          <Col><a href="resume.pdf" download>Descargar CV</a></Col>
-          <Col><a href="">Mi Llave Pública</a></Col>
+          <Col><Button href="Resume.pdf" download>Descargar CV</Button></Col>
+          <Col><Button href="">Mi Llave Pública</Button></Col>
         </Row>
       </Container>
     </div>

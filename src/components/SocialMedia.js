@@ -11,6 +11,7 @@ function SocialMedia() {
         <Button href="https://www.linkedin.com/in/kevinsrangellozada/" target="_blank" rel="noopener noreferrer">
             Linkedin
         </Button>
+        <p> </p>
         <Button href="https://github.com/nero-ventus" target="_blank" rel="noopener noreferrer">
           Github
         </Button>
