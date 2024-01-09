@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react';
+import React, {useEffect} from 'react';
 import Header from './components/Header';
 import Education from './components/Education';
 import Contact from './components/Contact';
@@ -12,6 +12,10 @@ import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 
 function App() {
+  useEffect(() => {
+    document.title = "Rangel Kevin - Web Page";
+  }, []);
+
   return (
     <div className="App">
       <Container>
@@ -28,8 +32,9 @@ function App() {
           <Col><Cryptography /></Col>
         </Row>
         <Row>
-          <Col><Button href="Resume.pdf" download>Descargar CV</Button></Col>
-          <Col><Button href="">Mi Llave Pública</Button></Col>
+          <Col><Button href="Resume-2023.pdf" download>Descargar CV</Button></Col>
+          <Col><Button href="publicRSA.txt" download>RSA Llave Pública</Button></Col>
+          <Col><Button href="publicDH.txt" download>DH Llave Pública</Button></Col>
         </Row>
       </Container>
     </div>
